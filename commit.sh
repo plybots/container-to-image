@@ -20,7 +20,7 @@ if [ -z "$container_id" ]; then
 fi
 
 # Create an image from the container
-image_name="$container_name-image"
+image_name="$container_name:latest"
 docker commit "$container_id" "$image_name"
 
 # Tag the image with the registry URL
