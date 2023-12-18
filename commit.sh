@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Check if the required parameters are provided
-if [ $# -ne 2 ]; then
-    echo "Usage: $0 <container_name> <registry_url>"
+if [ $# -ne 3 ]; then
+    echo "Usage: $0 <container_name> <registry_url> <existing_container>"
     exit 1
 fi
 
