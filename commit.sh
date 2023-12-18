@@ -9,9 +9,10 @@ fi
 # Assign the parameters to variables
 container_name=$1
 registry_url=$2
+existing_container=$3
 
 # Get the container ID
-container_id=$(docker ps -aqf "name=$container_name")
+container_id=$(docker ps -aqf "name=$existing_container")
 
 # Check if the container exists
 if [ -z "$container_id" ]; then
